@@ -7,3 +7,6 @@ spring:
 
 topic:
   store: topic_store_kafka
+
+server:
+  port: 8081
