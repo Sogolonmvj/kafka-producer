@@ -27,7 +27,7 @@ public class StudentResource {
     @PostMapping
     public ResponseEntity<String> sendMessage(@RequestBody Student student) throws JsonProcessingException {
 
-        logger.info("## Data sent by client: {%s}", student);
+        logger.info(String.format("## Data sent by client: {%s}", student));
 
         ObjectMapper objectMapper = new ObjectMapper();
         String response = objectMapper.writeValueAsString(student);

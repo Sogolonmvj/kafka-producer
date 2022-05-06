@@ -24,4 +24,5 @@ public class Student {
     private Address address;
     private List<String> favouriteSubjects;
     private BigDecimal totalSpentInBooks;
+
 }
