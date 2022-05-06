@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/v1/student/save")
+@RequestMapping("/producer/v1")
 public class StudentResource {
 
     @Autowired
@@ -24,7 +24,7 @@ public class StudentResource {
 
     private static final Logger logger = LoggerFactory.getLogger(StudentResource.class);
 
-    @PostMapping
+    @PostMapping("/student/save")
     public ResponseEntity<String> sendMessage(@RequestBody Student student) throws JsonProcessingException {
 
         logger.info(String.format("## Data sent by client: {%s}", student));
